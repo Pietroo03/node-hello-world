@@ -1,16 +1,13 @@
 console.log('Hello node js');
 
-/* console.log(process.argv); */
-
-const argv = process.argv
+const argv = process.argv.slice(2)
 console.log(argv);
-/* if (argv === admin && ) {
-    console.log();
-    
-} */
 
-
-/* console.log(process.env.PIN); */
 const pin = process.env.PIN
 console.log(pin);
 
+if (argv == 'Tino' && pin == 14072014) {
+    console.log('Welcome Tino'); 
+} else {
+    console.log('Access restricted');
+}
